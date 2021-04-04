@@ -1,5 +1,6 @@
 import file_input as fi
 import Graph as graf
+import fungsi as f
 
 ## Variabel Penampung Input
 numNode = 0
@@ -31,3 +32,9 @@ print()
 print(g.getIdxNode("Labtek 5"))
 print()
 print(g.getNodeCoordinate("Labtek 5"))
+print()
+print(f.euclideanDistance([4,2],[5,8]))
+print()
+print(g.getAdjacencyMatrix())
+print()
+print(g.getWeightedAdjacencyMatrix())
