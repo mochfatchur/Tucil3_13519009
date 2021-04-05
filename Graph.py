@@ -1,6 +1,13 @@
 import fungsi as f
 
 class Graph:
+    # Atribut
+    # __numOfNode
+    # __node
+    # __adjacencyMatrix
+    # __listOfCoordinate
+    # __weightedAdjacencyMatrix
+    # __adjacencyList
     
     def __init__(self, numOfNode, listOfNode, listOfCoordinate, adjaMatrix):
         self.__numOfNode = numOfNode
