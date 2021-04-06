@@ -6,7 +6,21 @@ import sys
 
 # PATH untuk import data uji/test
 sys.path.append('../test')
-import ITB_MAP as fi
+
+## ===================================== CATATAN ==============================================
+## untuk mengganti file test, ubah "ITB_MAP" pada "import ITB_MAP as fi" menjadi file.py yang terdapat di Tucil3_13519009/test yaitu :
+## AlunAlunBandung
+## Buahbatu
+## ITB_MAP
+## PasarPermiri
+
+## CONTOH
+## awalnya "import ITB_MAP as fi" ingin diubah ke file test "AlunAlunBandung"
+## maka menjadi "import AlunAlunBandung as fi"
+
+
+import ITB_MAP as fi # ubah ini
+
 
 ## Variabel Penampung Input
 numNode = 0
