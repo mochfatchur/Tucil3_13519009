@@ -48,3 +48,6 @@ listNodeAnswer = g.convertIdxToNodeList(listIdxAnswer)
 print(listNodeAnswer)
 for node in listNodeAnswer:
     print(node)
+for i in range(len(listIdxAnswer)-1):
+    dist = f.euclideanDistance(listCoordinate[listIdxAnswer[i]],listCoordinate[listIdxAnswer[i+1]])
+print("Jarak terpendek dari " + start + " menuju " + goal + " adalah " + str(dist) + " meter.")
