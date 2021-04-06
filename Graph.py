@@ -61,6 +61,18 @@ class Graph:
             listNode = listNode + [self.getNode(idx)]
         return listNode
 
+    def convertIdxToCoordinateNodeX(self, listIdxNode):
+        listCoor = []
+        for idx in listIdxNode:
+            listCoor = listCoor + [self.getNodeCoordinate(idx)[0]]
+        return listCoor
+
+    def convertIdxToCoordinateNodeY(self, listIdxNode):
+        listCoor = []
+        for idx in listIdxNode:
+            listCoor = listCoor + [self.getNodeCoordinate(idx)[1]]
+        return listCoor
+
     def getNeighbors(self, idxV):
         return self.__adjacencyList[idxV]
 

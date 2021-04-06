@@ -1,7 +1,8 @@
-import ITB_MAP as fi
+import PasarPermiri as fi
 import Graph as graf
 import fungsi as f
 import aStar as algo
+import gmplot
 
 ## Variabel Penampung Input
 numNode = 0
@@ -21,8 +22,8 @@ def isInNode(Node, listNodes):
 
 ## Inisiasi list dengan file input
 numNode = fi.numNode
-listNode = fi.listNodeITB
-listCoordinate = fi.listKoordinatITB
+listNode = fi.listNode
+listCoordinate = fi.listKoordinat
 adjacencyMatrix = fi.adjacencyMatrix
 
 
@@ -43,11 +44,25 @@ while(isIn==False):
 	isIn=isInNode(goal, listNode)
 	
 listIdxAnswer = algo.aStar(g,g.getIdxNode(start),g.getIdxNode(goal))
-print(listIdxAnswer)
+#print(listIdxAnswer)
 listNodeAnswer = g.convertIdxToNodeList(listIdxAnswer)
-print(listNodeAnswer)
+#print(listNodeAnswer)
+print("Rute Terpendeknya adalah: ")
 for node in listNodeAnswer:
-    print(node)
+    print("-",node)
 for i in range(len(listIdxAnswer)-1):
     dist = f.euclideanDistance(listCoordinate[listIdxAnswer[i]],listCoordinate[listIdxAnswer[i+1]])
 print("Jarak terpendek dari " + start + " menuju " + goal + " adalah " + str(dist) + " meter.")
+
+
+## Plotter
+latitude = g.convertIdxToCoordinateNodeX(listIdxAnswer)
+longitude = g.convertIdxToCoordinateNodeY(listIdxAnswer)
+
+petaLatitude = fi.latitude
+petaLongitude = fi.longitude
+
+gmap = gmplot.GoogleMapPlotter(petaLatitude, petaLongitude, 18)
+gmap.scatter(latitude, longitude, '#ff0000', size = 5, marker = False)
+gmap.plot(latitude, longitude, 'blue', edge_width = 2.5)
+gmap.draw("ruteTerpendek.html")

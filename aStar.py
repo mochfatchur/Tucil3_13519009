@@ -1,7 +1,6 @@
 import Graph as graf
 import fungsi as f
 from queue import PriorityQueue
-import file_input as fi
 
 def h(p1,p2):
     return f.euclideanDistance(p1,p2)
