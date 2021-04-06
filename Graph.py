@@ -21,7 +21,7 @@ class Graph:
                 if(self.__adjacencyMatrix[i][j] == 1):
                     p1 = self.__listOfCoordinate[i]
                     p2 = self.__listOfCoordinate[j]
-                    weight = f.euclideanDistance(p1,p2) * 111.139 #covert to meters
+                    weight = f.euclideanDistance(p1,p2) * 111.139 #convert to meters
                     self.__weightedAdjacencyMatrix[i][j] = weight
 
         self.__adjacencyList = []
