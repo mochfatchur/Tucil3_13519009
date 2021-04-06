@@ -6,7 +6,8 @@
 
 ## Cara menjalankan Program
 - Jalankan main.py yang terdapat di Tucil3_13519009/src
-- untuk mengganti file test, ubah "ITB_MAP" pada "import ITB_MAP as fi" menjadi file.py yang terdapat di Tucil3_13519009/test yaitu : "AlunAlunBandung", "Buahbatu", "ITB_MAP", "PasarPermiri"
+- untuk mengganti file test, di main.py ubah "ITB_MAP" pada "import ITB_MAP as fi" menjadi file.py yang terdapat di Tucil3_13519009/test yaitu : "AlunAlunBandung", "Buahbatu", "ITB_MAP", "PasarPermiri"
+- Contoh : awalnya "import ITB_MAP as fi" ingin diubah ke file test "AlunAlunBandung" maka menjadi "import AlunAlunBandung as fi"
 
 ## Author
 - Mochammad Fatchur Rochman/13519009
