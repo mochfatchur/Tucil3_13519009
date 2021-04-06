@@ -17,7 +17,7 @@ listNodeITB = ["Teknik Kimia ITB",
             "Teknik Material ITB",
             "Oktagon ITB",
             "Teknik Industri ITB",
-            "LABTEK XIV",
+            "Labtek XIV",
             "SBM ITB",
             "SITH ITB",
             "TVST ITB",
@@ -40,3 +40,26 @@ adjacencyMatrix = [[0,1,1,0,0,1,1,1,0,0,0,0],
                    [0,0,0,0,0,0,0,0,1,0,0,1],
                    [0,0,0,0,0,0,0,0,1,0,1,0]
                    ]
+
+numTest = 7
+listCoordinateTest = [[0,0],
+                      [3,0],
+                      [1,-1],
+                      [2,-3],
+                      [0,-5],
+                      [4,-2],
+                      [5,-4]
+                      ]
+listNodeTest = ["Start", "D", "A", "B", "C", "E", "Goal"]
+
+adjaTest = [[0,1,1,0,0,0,0],
+            [1,0,0,0,0,1,0],
+            [1,0,0,1,0,0,0],
+            [0,0,1,0,1,0,0],
+            [0,0,0,1,0,0,1],
+            [0,1,0,0,0,0,1],
+            [0,0,0,0,1,1,0]
+            ]
+
+
+

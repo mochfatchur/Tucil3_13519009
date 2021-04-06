@@ -46,8 +46,7 @@ class Graph:
     def getListOfCoordinate(self):
         return self.__listOfCoordinate
 
-    def getNodeCoordinate(self, nod):
-        idxNode = self.getIdxNode(nod)
+    def getNodeCoordinate(self, idxNode):
         return self.__listOfCoordinate[idxNode]
 
     def getWeightedAdjacencyMatrix(self):
@@ -55,6 +54,16 @@ class Graph:
 
     def getAdjacencyList(self):
         return self.__adjacencyList
+
+    def convertIdxToNodeList(self, listIdxNode):
+        listNode = []
+        for idx in listIdxNode:
+            listNode = listNode + [self.getNode(idx)]
+        return listNode
+
+    def getNeighbors(self, idxV):
+        return self.__adjacencyList[idxV]
+
     
     def getNumOfNode(self):
         return self.__numOfNode

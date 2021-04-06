@@ -1,6 +1,7 @@
 import file_input as fi
 import Graph as graf
 import fungsi as f
+import aStar as algo
 
 ## Variabel Penampung Input
 numNode = 0
@@ -18,25 +19,14 @@ listCoordinate = fi.listKoordinatITB
 adjacencyMatrix = fi.adjacencyMatrix
 
 
-## Test
 g = graf.Graph(numNode,listNode,listCoordinate,adjacencyMatrix)
 
-print(g.getNumOfNode())
-print()
-print(g.getAdjacencyMatrix())
-print()
-print(g.getListOfCoordinate())
-print()
-print(g.getListOfNode())
-print()
-print(g.getIdxNode("Labtek 5"))
-print()
-print(g.getNodeCoordinate("Labtek 5"))
-print()
-print(f.euclideanDistance([4,2],[5,8]))
-print()
-print(g.getAdjacencyMatrix())
-print()
-print(g.getWeightedAdjacencyMatrix())
-print()
-print(g.getAdjacencyList())
+start = input("Masukkan node start: ")
+goal = input("Masukkan node tujuan: ")
+
+listIdxAnswer = algo.aStar(g,g.getIdxNode(start),g.getIdxNode(goal))
+print(listIdxAnswer)
+listNodeAnswer = g.convertIdxToNodeList(listIdxAnswer)
+print(listNodeAnswer)
+for node in listNodeAnswer:
+    print(node)
