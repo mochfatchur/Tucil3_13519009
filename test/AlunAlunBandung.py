@@ -1,10 +1,10 @@
 ## PETA Alun-Alun Bandung
 numNode = 9
 
-latitude = -6.921948
-longitude = 107.607168
+Latitude=-6.921676034108906
+longitude=107.60696045260143
 
-listKoordinat = [[-6.922494916145625, 107.60763931601781],
+listKoordinatITB = [[-6.922494916145625, 107.60763931601781],
                  [-6.921223970382415, 107.60778905040722],
                  [-6.921053385937518, 107.60646713138735],
                  [-6.920900181593247, 107.6050873393599],
@@ -14,7 +14,7 @@ listKoordinat = [[-6.922494916145625, 107.60763931601781],
                  [-6.922099752101955, 107.60401037846468],
                  [-6.920824269765021, 107.60408770507536]
                  ]
-listNode = ["Jalan Dalem Kaun - Alun-Alun Timur",
+listNodeITB = ["Jalan Dalem Kaun - Alun-Alun Timur",
             "Jalan Asia Afrika - Alun-Alun Timur",
             "Jalan Asia Afrika - Banceuy",
             "Jalan Asia Afrika - Alkateri",
