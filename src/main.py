@@ -74,13 +74,17 @@ print("Rute Terpendeknya adalah: ")
 it = 0
 for node in listNodeAnswer:
         if(it == 0):
-                print("dari",node)
+                print(node,end='')
+        elif(it == numNode):
+                print(" -->",node)
         else:
-                print("ke",node)
+                print(" -->",node,end='')
         it+=1
 
 for i in range(len(listIdxAnswer)-1):
         dist = f.euclideanDistance(listCoordinate[listIdxAnswer[i]],listCoordinate[listIdxAnswer[i+1]])
+
+print()
 print()
 print("Jarak terpendek dari " + start + " menuju " + goal + " adalah " + str(dist) + " meter.")
 
@@ -105,3 +109,4 @@ for i in range(numNode):
 gmap.scatter(latitudeRute, longitudeRute, '#ff0000', size = 5, marker = False)
 gmap.plot(latitudeRute, longitudeRute, 'blue', edge_width = 2.5)
 gmap.draw("Visualisasi.html")
+print("Untuk melihat Visualisasi-nya buka Visualisasi.html yang telah dihasilkan di folder src")
