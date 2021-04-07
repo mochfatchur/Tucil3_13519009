@@ -4,7 +4,7 @@ numNode = 8
 latitude=-6.947766470635641
 longitude=107.65586801394181
 
-listKoordinatITB = [[-6.948021406199452, 107.65561722740172],
+listKoordinat = [[-6.948021406199452, 107.65561722740172],
 		    [-6.9476480695358065, 107.65565807991213],
 		    [-6.94753142760766, 107.65535394662533],
 		    [-6.947221557218974, 107.6553960359341],
@@ -13,7 +13,7 @@ listKoordinatITB = [[-6.948021406199452, 107.65561722740172],
 		    [-6.948402149724846, 107.65584082025177],
 		    [-6.948209037854483, 107.65700094013205]
                  ]
-listNodeITB = [["Jalan Neptunus Barat II - III"],
+listNode = [["Jalan Neptunus Barat II - III"],
 	       ["Jalan Neptunus Barat III - IV"],
 	       ["Jalan Neptunus Barat IV - Neptunus Raya Barat"],
 	      l ["Jalan Neptunus Barat VI - Neptunus Raya Barat"],
