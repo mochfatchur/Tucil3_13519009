@@ -4,7 +4,7 @@ numNode = 9
 latitude=-3.2961100069412157
 longitude=102.86208977467297
 
-listKoordinatITB = [[-3.2968330050771906, 102.8615211463461],
+listKoordinat = [[-3.2968330050771906, 102.8615211463461],
 		    [-3.296138792988724, 102.86124621994162],
 		    [-3.2959419767357265, 102.86118855243879],
 		    [-3.295654116172153, 102.86112417942701],
@@ -14,7 +14,7 @@ listKoordinatITB = [[-3.2968330050771906, 102.8615211463461],
 		    [-3.295659932808658, 102.86294479829793],
 		    [-3.296467241446234, 102.86295851169892]
                  ]
-listNodeITB = [["Jalan Garuda - Garuda Hitam"],
+listNode = [["Jalan Garuda - Garuda Hitam"],
 	       ["Jalan Garuda Hitam - Kenanga 1"],
 	       ["Jalan Garuda Hitam - Garuda Merah"],
 	       ["Jalan Garuda Hitam - Garuda Putih"],
